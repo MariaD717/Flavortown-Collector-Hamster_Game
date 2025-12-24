@@ -372,9 +372,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Tool: {fileID: 8849763988304813168, guid: 78ca0f557dd9ad647998818977508324, type: 3}
-  timer: 2
   lowestPoint: -7
   highestPoint: 7
+  spawnRate: 2
 --- !u!61 &805926957
 BoxCollider2D:
   m_ObjectHideFlags: 0
