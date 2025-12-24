@@ -1,9 +1,13 @@
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Tool : MonoBehaviour
 {
     public GameObject Food;
+    public int scoreAdd = 1;
+    public int playerScore;
+    public Text scoreText;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,8 +31,14 @@ public class Tool : MonoBehaviour
     void addPoint()
     {
         print("Plus Point");
+
     }
-    
-}   
+    public void addScore(int scoreAdd)
+    {
+        playerScore += scoreAdd;
+        scoreText.text += playerScore.ToString();
+    }
+
+}
 
 
