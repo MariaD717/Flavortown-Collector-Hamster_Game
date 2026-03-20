@@ -179,3 +179,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Food: {fileID: 8849763988304813168}
+  playerScore: 0
+  scoreText: {fileID: 8463234212169677656, guid: 29f0ea7b5002be54c9754da7089af5f0, type: 3}

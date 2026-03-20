@@ -1,2 +1,14 @@
 fileFormatVersion: 2
 guid: 21e5216b34619aa4883831ee49286a5b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Food: {fileID: 8849763988304813168, guid: 78ca0f557dd9ad647998818977508324, type: 3}
+  - scoreText: {instanceID: 0}
+  - tool: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
