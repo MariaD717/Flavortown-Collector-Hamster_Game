@@ -641,6 +641,7 @@ GameObject:
   - component: {fileID: 2107643987}
   - component: {fileID: 2107643990}
   - component: {fileID: 2107643991}
+  - component: {fileID: 2107643992}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Player
@@ -783,6 +784,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
   scoreText: {fileID: 1954431092}
+--- !u!114 &2107643992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107643986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b9ef115bb1e2e439810927881774c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  timerRemaining: 5
+  timerRunning: 0
 --- !u!1 &2135582783
 GameObject:
   m_ObjectHideFlags: 0
