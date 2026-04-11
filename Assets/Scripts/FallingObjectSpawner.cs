@@ -5,17 +5,20 @@ using UnityEngine.SceneManagement;
 public class FallingObjectSpawner : MonoBehaviour
 {
     public GameObject Food;
+    public GameObject FoodNegative;
     private float timer = 0;
     public float lowestPoint = -7;
     public float highestPoint = 7;
     public float spawnRate1 = 2;
     public float spawnRate2 = 3;
     public float gameTimer = 10;
+    
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+
 
     }
     void Update()
@@ -53,9 +56,17 @@ public class FallingObjectSpawner : MonoBehaviour
     // Update is called once per frame
     void spawnObject()
     {
-
-        Instantiate(Food, new Vector3(Random.Range(lowestPoint, highestPoint), transform.position.y, 0),transform.rotation);
-        
+        // create a boolean variable and randomize true or false:
+        int foo = Random.Range(0, 2);
+        bool bar = (foo == 0);
+        if (bar)
+        {
+            Instantiate(Food, new Vector3(Random.Range(lowestPoint, highestPoint), transform.position.y, 0), transform.rotation);
+        }
+        else
+        {
+            Instantiate(FoodNegative, new Vector3(Random.Range(lowestPoint, highestPoint), transform.position.y, 0), transform.rotation);
+        }
     }
     void gameOver()
     {

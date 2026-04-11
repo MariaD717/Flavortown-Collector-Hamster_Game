@@ -370,6 +370,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   Food: {fileID: 8849763988304813168, guid: 78ca0f557dd9ad647998818977508324, type: 3}
+  FoodNegative: {fileID: 8849763988304813168, guid: 0b21848169f280741a56aca1814ba6b1, type: 3}
   lowestPoint: -7
   highestPoint: 7
   spawnRate1: 6
@@ -639,9 +640,9 @@ GameObject:
   - component: {fileID: 2107643989}
   - component: {fileID: 2107643988}
   - component: {fileID: 2107643987}
-  - component: {fileID: 2107643990}
   - component: {fileID: 2107643991}
   - component: {fileID: 2107643992}
+  - component: {fileID: 2107643993}
   m_Layer: 3
   m_Name: Hamster
   m_TagString: Player
@@ -709,7 +710,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: -5654023455437863803, guid: 056d70c0d934f5c428e48f2dfeb70be0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -729,13 +730,40 @@ Transform:
   m_GameObject: {fileID: 2107643986}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: -4.35, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 6.07, y: -3.6518, z: 0}
+  m_LocalScale: {x: 0.8111658, y: 0.8111658, z: 0.8111658}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &2107643990
+--- !u!114 &2107643991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107643986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d959f66f928f44ba5fc1a554cbc908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
+  scoreText: {fileID: 1954431092}
+--- !u!114 &2107643992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2107643986}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24b9ef115bb1e2e439810927881774c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Timer
+  timerRemaining: 5
+  timerRunning: 0
+--- !u!58 &2107643993
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -769,35 +797,8 @@ CircleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
---- !u!114 &2107643991
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107643986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 87d959f66f928f44ba5fc1a554cbc908, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  scoreText: {fileID: 1954431092}
---- !u!114 &2107643992
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2107643986}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24b9ef115bb1e2e439810927881774c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Timer
-  timerRemaining: 5
-  timerRunning: 0
+  m_Offset: {x: 0, y: -0.16594446}
+  m_Radius: 1.3840555
 --- !u!1 &2135582783
 GameObject:
   m_ObjectHideFlags: 0
