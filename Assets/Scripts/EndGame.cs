@@ -9,7 +9,7 @@ public class EndGame : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             Debug.Log("Hello world");
-            Application.Quit();
+               Application.Quit();
         }
         
     }
